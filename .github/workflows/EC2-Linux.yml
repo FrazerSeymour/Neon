@@ -1,4 +1,4 @@
-name: Ubuntu
+name: Linux
 on:
   push:
     branches: [main, develop]
@@ -6,7 +6,7 @@ on:
     branches: [main, develop]
   workflow_dispatch:
 jobs:
-  Ec2Run:
+  Ec2LinuxRun:
     runs-on: [self-hosted, linux, X64]
     steps:
       - name: Checkout
